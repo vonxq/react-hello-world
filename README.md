@@ -11,7 +11,7 @@ justHtml下index.html，浏览器打开即可看到
 ```
 cd ./withWebpack
 yarn
-node processToBrowser或npm run build
+npm run build
 打开index.html即可查看源码
 ```
 具体踩坑过程看文件夹里面的Readme

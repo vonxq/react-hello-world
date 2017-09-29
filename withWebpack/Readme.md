@@ -5,7 +5,7 @@ webpack和browserify在HelloWorld程序上作用是一样的，都是将源文�
 ```
 cd ./withWebpack
 yarn
-node processToBrowser或npm run build
+npm run build
 打开index.html即可查看源码
 ```
 具体踩坑过程看文件夹里面的Readme
