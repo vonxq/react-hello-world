@@ -1,2 +1,4 @@
-node_modules
-out
+withBrowserify/node_modules/
+withBrowserify/out/
+withWebpack/node_modules/
+withWebpack/out/
