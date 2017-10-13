@@ -7,10 +7,17 @@ module.exports = {
         filename: 'build.js'
     },
     module: {
-      rules: [{
+      rules: [
+        {
           test: /\.js$/,
           use: ['babel-loader?cacheDirectory=true'],
           include: path.join(__dirname, 'src')
-      }]
+        },
+        {
+          test: /\.css$/,
+          use: ['style-loader','css-loader'],
+          include: path.join(__dirname, 'src')
+        },
+    ]
   }
 };

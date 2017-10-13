@@ -9,6 +9,15 @@ npm run build
 打开index.html即可查看源码
 ```
 具体踩坑过程看文件夹里面的Readme
+## 添加CSS加载功能
+webpack加载css功能
+css-loader能识别CSS文件
+style-loader能加载CSS的style样式
+** 注意: loader一定是style-loader在前（webpack的配置从右往左，style-loader写在前能保证css解析后style再被包裹），否则会报错(Module build failed: Unknown word) **
+> css-loader是允许webpack识别.css的文件
+style-loader是将webpack识别完的css文件中的内容，在编译完运行文件的时候，将这些css用style标签包起来嵌在head内
+
+注: 行内样式的识别加载不需要任何loader
 # 
 ## package包说明
 ### babel
