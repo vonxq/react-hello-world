@@ -1,4 +1,15 @@
 # 用browserify构建Hello world
+hello world简单应用
+项目中包含一个es6构建组件的简单应用，npm run buildEs6即可看到
+es6中报错: Missing class properties transform，安装babel-preset-stage-0，并加入.babel中即可
+preset的加载顺序会有影响
+```
+  // 成功
+  "presets": ["react", "es2015", "stage-0"],
+  // 失败Missing class properties transform
+    "presets": ["stage-0", "es2015",  "react"],
+    "presets": ["stage-0", "react", "es2015"],
+```
 ## 使用
 克隆程序，然后执行:
 ```
