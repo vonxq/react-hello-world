@@ -1,5 +1,6 @@
-import React from 'react'
-const MyComponent = React.createClass({
+import { createClass } from 'react'
+import { render } from 'react-dom'
+const Hello = createClass({
   getInitialState: function() {
     return { count: [] };
   },
@@ -22,4 +23,4 @@ const MyComponent = React.createClass({
   }
 })
 
-export default MyComponent
+render(<Hello name="Anne"/>, document.getElementById("app"))

@@ -2,6 +2,7 @@
 webpack和browserify在HelloWorld程序上作用是一样的，都是将源文件转译并输出
 项目中包含一个es6构建组件的简单应用，把webpack入口改为es6.js运行即可看到
 es6中报错: Missing class properties transform，安装babel-preset-stage-0，并加入.babel中即可
+es5无法使用，因为React16已废弃createClass
 preset的加载顺序会有影响
 ```
   // 成功
